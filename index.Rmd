@@ -94,10 +94,11 @@ tableHTML(mtcars, widths = rep(100, 12), second_header = list(c(3, 4, 5), c('col
 ```
 
 
-## add\_css\_* funtion family
+## add\_css\_* function family
 
 These functions add inline CSS to the HTML table. The package has been developed so that the 
-functions are chained with the `%>%` (pipe) operator. You can chain as many of those as you want
+functions are chained with the `%>%` (pipe) operator which comes from the `magrittr` package. 
+You can chain as many of those as you want
 when building your HTML table. The CSS code is added within the HTML table. This is ok for simple
 table styling but for more complex CSS styles (like the hover selector) it would still require a
 separate css file (we will see how to work with those in shiny later on).
@@ -126,7 +127,7 @@ mtcars %>%
 
 \    
 
-And adding rows manually:
+And adding row indices manually:
 
 ```{r add css row 2}
 mtcars %>%
