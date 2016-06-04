@@ -9,8 +9,6 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## tableHTML
-
 This is a package to build in CSS-ible HTML tables in an easy way, which are compatible with R shiny. 
 The main function `tableHTML` will convert a data.frame or matrix or any other object that can be
 converted into a data.frame into an HTML table. Using the function on R Studio will print the table
@@ -369,7 +367,7 @@ Note: You can find out more about CSS and shiny [here](http://shiny.rstudio.com/
 
 In order to add a vertical column line we can use the column ids created by tableHTML. To add a vertical red line at mpg column, our css file would look like this:
 
-```{css}
+```{CSS}
 #mpg {
 	border-left: 5px solid red;
 }
@@ -381,7 +379,7 @@ Our HTML table will look like this:
 
 In order to change the background color of one of the headers (e.g. the second) our css would look like this:
 
-```{css 2}
+```{CSS 2}
 #mpg{
 	border-left: 5px solid red;
 }
@@ -396,7 +394,7 @@ In order to change the background color of one of the headers (e.g. the second) 
 
 And in order to align the first of the second_headers in the center our css would look like:
 
-```{css 3}
+```{CSS 3}
 #mpg{
 	border-left: 5px solid red;
 }
