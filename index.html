@@ -2017,9 +2017,9 @@ tableHTML(mtcars, second_header = list(c(3, 4, 5), c('col1', 'col2', 'col3')))</
 </tr>
 </table>
 </div>
-<div id="add_css_-funtion-family" class="section level2">
-<h2>add_css_* funtion family</h2>
-<p>These functions add inline CSS to the HTML table. The package has been developed so that the functions are chained with the <code>%&gt;%</code> (pipe) operator. You can chain as many of those as you want when building your HTML table. The CSS code is added within the HTML table. This is ok for simple table styling but for more complex CSS styles (like the hover selector) it would still require a separate css file (we will see how to work with those in shiny later on).</p>
+<div id="add_css_-function-family" class="section level2">
+<h2>add_css_* function family</h2>
+<p>These functions add inline CSS to the HTML table. The package has been developed so that the functions are chained with the <code>%&gt;%</code> (pipe) operator which comes from the <code>magrittr</code> package. You can chain as many of those as you want when building your HTML table. The CSS code is added within the HTML table. This is ok for simple table styling but for more complex CSS styles (like the hover selector) it would still require a separate css file (we will see how to work with those in shiny later on).</p>
 <div id="add_css_row" class="section level3">
 <h3>add_css_row</h3>
 <p>In order to add css in specific table rows you need to use the <code>add_css_row</code> function. The function has three arguments:</p>
@@ -2510,7 +2510,7 @@ tableHTML(mtcars, second_header = list(c(3, 4, 5), c('col1', 'col2', 'col3')))</
 </tr>
 </table>
 <p> </p>
-<p>And adding rows manually:</p>
+<p>And adding row indices manually:</p>
 <pre class="r"><code>mtcars %&gt;%
   tableHTML(widths = c(140, rep(45, 11))) %&gt;% 
   add_css_row(css = list(c('background-color', 'border'), c('lightgray', '3px solid green')),
