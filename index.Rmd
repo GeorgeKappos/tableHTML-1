@@ -161,11 +161,11 @@ The function has three arguments:
           be an atomic vector with the style definitions (e.g. background-color). The second element
           will be an atomic vector with the same length as the first element, which will contain the
           style definitions' values (e.g. red).
-3. *columns*: A character atomic vector with the names of the columns where the style
-              definitions will be applied on. At least one column name must be provided. 
-              If the rownames are included the column name is "rownames". headers and second_headers
-              are not part of the columns. These need to be set from their corresponding add_css 
-              functions.
+3. *column_names*: A character atomic vector with the names of the columns where the style
+                   definitions will be applied on. At least one column name must be provided. 
+                   If the rownames are included the column name is "rownames". headers and second_headers
+                   are not part of the columns. These need to be set from their corresponding add_css 
+                   functions.
 
 For example:
 

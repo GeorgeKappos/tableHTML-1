@@ -3484,7 +3484,7 @@ tableHTML(mtcars, second_header = list(c(3, 4, 5), c('col1', 'col2', 'col3')))</
 <ol style="list-style-type: decimal">
 <li><em>tableHTML</em>: A tableHTML object (created by <code>tableHTML()</code>)</li>
 <li><em>css</em>: A list of two elements with the corresponding css. The first element of the list should be an atomic vector with the style definitions (e.g. background-color). The second element will be an atomic vector with the same length as the first element, which will contain the style definitions’ values (e.g. red).</li>
-<li><em>columns</em>: A character atomic vector with the names of the columns where the style definitions will be applied on. At least one column name must be provided. If the rownames are included the column name is “rownames”. headers and second_headers are not part of the columns. These need to be set from their corresponding add_css functions.</li>
+<li><em>column_names</em>: A character atomic vector with the names of the columns where the style definitions will be applied on. At least one column name must be provided. If the rownames are included the column name is “rownames”. headers and second_headers are not part of the columns. These need to be set from their corresponding add_css functions.</li>
 </ol>
 <p>For example:</p>
 <pre class="r"><code>mtcars %&gt;%
