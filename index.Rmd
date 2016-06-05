@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-This is a package to build in CSS-ible HTML tables in an easy way, which are compatible with R shiny. 
+This is a package for building CSS-ible HTML tables in an easy way, which are compatible with R shiny. 
 The main function `tableHTML` will convert a data.frame or matrix or any other object that can be
 converted into a data.frame into an HTML table. Using the function on R Studio will print the table
 on the viewer. The default tables are built without any CSS in order to allow for full flexibility
